@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Project 2 - Interactive Comic</title>
+</head>
+<body>
+  <div class="navigationGuide">
+    <span>USE ARROWS:</span>
+    <strong>↓ ↓ → → → →</strong>
+</div>
+<main>
+
+  <section class="panel panel1">
+    <img class="backgroundImage" src="assets/panel1-elevator.jpg" alt="Elevator">
+    <div class="panelText">
+      <p class="smallText">11:48 PM</p>
+      <h1>The Elevator</h1>
+      <p>The ride should only take two minutes.</p>
+    </div>
+    <button class="nextButton" id="startButton">Enter Elevator ↓</button>
+  </section>
+
+  <section class="panel panel2" id="panel2">
+    <img class="backgroundImage" src="assets/panel2-phone.jpg" alt="Phone photo">
+    <div class="panelText">
+      <p class="smallText">12:13 AM</p>
+      <h1>25 minutes later...</h1>
+      <p>There is a photo on his phone that he never took.</p>
+    </div>
+    <button class="photoButton" id="photoButton">Tap the Photo</button>
+    <div class="photoReveal" id="photoReveal">
+      <p>Someone is standing behind him.</p>
+    </div>
+    <button class="nextButton" id="doorButton">Run ↓</button>
+  </section>
+
+  <div class="sideScroll" id="sideScroll">
+
+    <section class="horizontalPanel panel3">
+      <img class="backgroundImage" src="assets/panel3-door.jpg" alt="Dark doorway">
+      <div class="panelText">
+        <h1>The Door</h1>
+        <p>He sees one door at the end of the hallway.</p>
+      </div>
+      <button class="openDoorButton" id="openDoorButton">Open Door</button>
+      <div class="doorMessage" id="doorMessage">
+        <p>DON'T GO IN.</p>
+      </div>
+    </section>
+
+    <section class="horizontalPanel panel4">
+      <img class="backgroundImage" src="assets/panel4-creature.jpg" alt="Dark figures">
+      <div class="panelText">
+        <h1>Why must you run?</h1>
+        <p>Is it because of them... or because of you?</p>
+      </div>
+      <div class="eyes eyes1"></div>
+      <div class="eyes eyes2"></div>
+      <div class="eyes eyes3"></div>
+    </section>
+
+    <section class="horizontalPanel panel5">
+      <img class="backgroundImage" src="assets/panel5-rollercoaster.jpg" alt="Roller coaster">
+      <div class="panelText">
+        <h1>He Falls</h1>
+        <p>Gravity stops making sense.</p>
+      </div>
+      <div class="fallingObject object1">📱</div>
+      <div class="fallingObject object2">📄</div>
+      <div class="fallingObject object3">📘</div>
+    </section>
+
+    <section class="horizontalPanel panel6">
+      <img class="backgroundImage" src="assets/panel6-elevator.jpg" alt="Elevator return">
+      <div class="panelText">
+        <p class="smallText">11:50 PM</p>
+        <h1>Back Again.</h1>
+        <p>Only two minutes passed.</p>
+      </div>
+      <button class="finalButton" id="finalButton">Check Phone</button>
+      <div class="finalReveal" id="finalReveal">
+        <h2>The photo is still there.</h2>
+        <p>And the figure is still behind him.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
